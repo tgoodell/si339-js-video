@@ -11,7 +11,7 @@ window.addEventListener("load", function() {
 document.querySelector("#play").addEventListener("click", function() {
 	// Update volume info
 	slider.value = 100
-	document.querySelector("#volume").textContent = slider.value
+	document.querySelector("#volume").textContent = slider.value + "%"
 
 	// Actually play the video
 	video.play()
@@ -79,6 +79,6 @@ document.querySelector("#orig").addEventListener("click", function() {
 
 // Update volume info
 document.querySelector('#slider').addEventListener("input", function() {
-	document.querySelector("#volume").textContent = slider.value
+	document.querySelector("#volume").textContent = slider.value + "%"
 	video.volume = slider.value / 100
 })
