@@ -10,7 +10,6 @@ window.addEventListener("load", function() {
 // Play the Video
 document.querySelector("#play").addEventListener("click", function() {
 	// Update volume info
-	slider.value = 100
 	document.querySelector("#volume").textContent = slider.value + "%"
 
 	// Actually play the video
